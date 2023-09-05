@@ -266,7 +266,7 @@
         <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
           <form>
             <input id="email" name="email" type="email" placeholder="Subscribe your email" class="tm-input" required />
-            <button type="submit" class="btn tm-btn-submit" onclick="javascript:saveSubscription();">Submit</button>
+            <button type="submit" id="submitButton" class="btn tm-btn-submit">Submit</button>
           </form>
         </div>
       </div>
@@ -378,6 +378,11 @@
       // Scroll to corresponding section with animation
       $('#tmNav').singlePageNav();
 
+      // subscription form
+      $("#submitButton").on('click', function() {
+        alert('reaching...');
+      });
+      
       // Add smooth scrolling to all links
       // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
       $("a").on('click', function (event) {
