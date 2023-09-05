@@ -399,16 +399,8 @@
         var formData = {
           email = $('#email').val()
         };
-        $.ajax({
-          url: 'https://prod-67.westeurope.logic.azure.com:443/workflows/205cfb524d4744be8aeccec7ac8bc924/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2rxa7g0BGSFAgd8ASoEknc0EVidOZXGC21a9tbq5Go8',
-          type: 'get',
-          data = formData,
-          dataType: 'json',
-          encode: true,
-        }).done(function (data) {
-          console.log(data);
-        });
         event.preventDefault();
+      
       });
       
       // Pop up
